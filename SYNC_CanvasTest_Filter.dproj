@@ -44,7 +44,7 @@
     <Base>true</Base>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Base)'!=''">
-    <DCC_UnitSearchPath>Lib\Kits\AviUtl2Canvas\Source\Host;Lib\Kits\AviUtl2Canvas\Source\UI;$(DCC_UnitSearchPath)</DCC_UnitSearchPath>
+    <DCC_UnitSearchPath>Source\Lib\Kits\AviUtl2Canvas\Source\Host;Source\Lib\Kits\AviUtl2Canvas\Source\UI;$(DCC_UnitSearchPath)</DCC_UnitSearchPath>
     <DCC_DcuOutput>$(MSBuildProjectDirectory)\$(Platform)\$(ProjectName)\$(Config)\DCU</DCC_DcuOutput>
     <GenDll>true</GenDll>
     <DCC_ExeOutput>.\Win64\Plugin\$(Config)</DCC_ExeOutput>
@@ -60,13 +60,13 @@
     <Debugger_WorkingDirectory>D:\aviutl2_v2.1.6a</Debugger_WorkingDirectory>
   </PropertyGroup>
   <ItemGroup>
-    <DCCReference Include="Lib\Kits\AviUtl2Canvas\Source\Host\AviUtl2FilterTypes.pas" />
-    <DCCReference Include="Lib\Kits\AviUtl2Canvas\Source\Host\PluginFilterTable.pas" />
-    <DCCReference Include="Lib\Kits\AviUtl2Canvas\Source\Host\PluginFilterContextManager.pas" />
-    <DCCReference Include="Lib\Kits\AviUtl2Canvas\Source\Host\SyncFrameCapture.pas" />
-    <DCCReference Include="Lib\Kits\AviUtl2Canvas\Source\Host\SyncCanvasPlugin.pas" />
-    <DCCReference Include="Lib\Kits\AviUtl2Canvas\Source\UI\SyncCanvasView.pas" />
-    <DCCReference Include="Lib\Kits\AviUtl2Canvas\Source\UI\SyncCanvasEditor.pas" />
+    <DCCReference Include="Source\Lib\Kits\AviUtl2Canvas\Source\Host\AviUtl2FilterTypes.pas" />
+    <DCCReference Include="Source\Lib\Kits\AviUtl2Canvas\Source\Host\PluginFilterTable.pas" />
+    <DCCReference Include="Source\Lib\Kits\AviUtl2Canvas\Source\Host\PluginFilterContextManager.pas" />
+    <DCCReference Include="Source\Lib\Kits\AviUtl2Canvas\Source\Host\SyncFrameCapture.pas" />
+    <DCCReference Include="Source\Lib\Kits\AviUtl2Canvas\Source\Host\SyncCanvasPlugin.pas" />
+    <DCCReference Include="Source\Lib\Kits\AviUtl2Canvas\Source\UI\SyncCanvasView.pas" />
+    <DCCReference Include="Source\Lib\Kits\AviUtl2Canvas\Source\UI\SyncCanvasEditor.pas" />
     <DelphiCompile Include="$(MainSource)">
       <MainSource>MainSource</MainSource>
     </DelphiCompile>

@@ -2,8 +2,8 @@
 
 uses
   System.SysUtils,
-  AviUtl2FilterTypes in 'Lib\Kits\AviUtl2Canvas\Source\Host\AviUtl2FilterTypes.pas',
-  SyncCanvasPlugin in 'Lib\Kits\AviUtl2Canvas\Source\Host\SyncCanvasPlugin.pas';
+  AviUtl2FilterTypes in 'Source\Lib\Kits\AviUtl2Canvas\Source\Host\AviUtl2FilterTypes.pas',
+  SyncCanvasPlugin in 'Source\Lib\Kits\AviUtl2Canvas\Source\Host\SyncCanvasPlugin.pas';
 
 function InitializePlugin(Version: Cardinal): Byte; cdecl;
 begin

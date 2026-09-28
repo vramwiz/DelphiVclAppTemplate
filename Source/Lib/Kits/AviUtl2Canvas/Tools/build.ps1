@@ -1,7 +1,7 @@
-param([ValidateSet('Debug','Release')][string]$Config = 'Debug', [switch]$Install)
+﻿param([ValidateSet('Debug','Release')][string]$Config = 'Debug', [switch]$Install)
 $ErrorActionPreference = 'Stop'
 $kitRoot = Split-Path $PSScriptRoot -Parent
-$projectRoot = [IO.Path]::GetFullPath((Join-Path $kitRoot '..\..\..'))
+$projectRoot = [IO.Path]::GetFullPath((Join-Path $kitRoot '..\..\..\..'))
 $setup = 'C:\Program Files (x86)\Embarcadero\Studio\37.0\bin\rsvars.bat'
 $project = Join-Path $projectRoot 'SYNC_CanvasTest_Filter.dproj'
 $buildLine = 'call "' + $setup + '" && msbuild "' + $project + '" /t:Build /p:Config=' + $Config + ' /p:Platform=Win64 /v:minimal /nologo'

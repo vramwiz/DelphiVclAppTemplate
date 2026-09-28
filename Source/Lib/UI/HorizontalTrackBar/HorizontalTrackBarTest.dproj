@@ -1,15 +1,15 @@
 ﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <ProjectGuid>{0A23A0FD-4C15-4781-B36B-5C124A29DB84}</ProjectGuid>
+    <ProjectGuid>{DEC87B8D-C672-48DC-95FE-CC1F7331C88F}</ProjectGuid>
     <ProjectVersion>20.4</ProjectVersion>
     <FrameworkType>VCL</FrameworkType>
-    <MainSource>VerticalScrollBarTest.dpr</MainSource>
+    <MainSource>HorizontalTrackBarTest.dpr</MainSource>
     <Base>True</Base>
     <Config Condition="'$(Config)'==''">Debug</Config>
-    <Platform Condition="'$(Platform)'==''">False</Platform>
+    <Platform Condition="'$(Platform)'==''">Win64</Platform>
     <TargetedPlatforms>2</TargetedPlatforms>
     <AppType>Application</AppType>
-    <ProjectName Condition="'$(ProjectName)'==''">VerticalScrollBarTest</ProjectName>
+    <ProjectName Condition="'$(ProjectName)'==''">HorizontalTrackBarTest</ProjectName>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Config)'=='Base' or '$(Base)'!=''">
     <Base>true</Base>
@@ -43,18 +43,18 @@
   </PropertyGroup>
   <PropertyGroup Condition="'$(Base)'!=''">
     <DCC_Namespace>System;Xml;Data;Datasnap;Web;Soap;Vcl;Winapi;$(DCC_Namespace)</DCC_Namespace>
-    <DCC_DcuOutput>Win64\VerticalScrollBarTest\$(Config)\DCU</DCC_DcuOutput>
-    <DCC_ExeOutput>Win64\VerticalScrollBarTest\$(Config)</DCC_ExeOutput>
-    <DCC_UnitSearchPath>Lib\UI\VerticalScrollBar;Lib\UI\VerticalScrollBar\Tests;$(DCC_UnitSearchPath)</DCC_UnitSearchPath>
-    <SanitizedProjectName>VerticalScrollBarTest</SanitizedProjectName>
+    <DCC_DcuOutput>Win64\$(Config)\DCU</DCC_DcuOutput>
+    <DCC_ExeOutput>Win64\$(Config)</DCC_ExeOutput>
+    <DCC_UnitSearchPath>.;$(DCC_UnitSearchPath)</DCC_UnitSearchPath>
+    <SanitizedProjectName>HorizontalTrackBarTest</SanitizedProjectName>
     <VerInfo_Locale>1041</VerInfo_Locale>
-    <VerInfo_Keys>CompanyName=;FileDescription=Vertical Scrollbar Test;FileVersion=1.0.0.0;InternalName=;LegalCopyright=;LegalTrademarks=;OriginalFilename=;ProductName=Vertical Scrollbar Test;ProductVersion=1.0.0.0;Comments=</VerInfo_Keys>
+    <VerInfo_Keys>CompanyName=;FileDescription=HorizontalTrackBar Test;FileVersion=1.0.0.0;InternalName=;LegalCopyright=;LegalTrademarks=;OriginalFilename=;ProductName=HorizontalTrackBar Test;ProductVersion=1.0.0.0;Comments=</VerInfo_Keys>
     <Manifest_File>$(BDS)\bin\default_app.manifest</Manifest_File>
     <Custom_Styles>"Windows Modern Dark|VCLSTYLE|$(BDSCOMMONDIR)\Styles\WindowsModernDark.vsf"</Custom_Styles>
     <DPIAware>PerMonitorV2</DPIAware>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Base_Win64)'!=''">
-    <DCC_ExeOutput>Win64\VerticalScrollBarTest\$(Config)</DCC_ExeOutput>
+    <DCC_ExeOutput>Win64\$(Config)</DCC_ExeOutput>
     <VerInfo_Locale>1041</VerInfo_Locale>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Cfg_1)'!=''">
@@ -99,7 +99,7 @@
     <BorlandProject>
       <Delphi.Personality>
         <Source>
-          <Source Name="MainSource">VerticalScrollBarTest.dpr</Source>
+          <Source Name="MainSource">HorizontalTrackBarTest.dpr</Source>
         </Source>
         <Platforms>
           <Platform value="Win64">True</Platform>

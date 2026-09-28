@@ -1,4 +1,4 @@
-# 独自縦スクロールバー
+﻿# 独自縦スクロールバー
 
 - ID: `vertical-scrollbar`
 - 版: 1.0.0（2026-09-28登録）
@@ -28,7 +28,7 @@ FScrollBar.SetRange(Max(0, ContentHeight - ViewHeight), Max(1, ViewHeight));
 
 この例では `System.Math` と `Winapi.Windows` もusesへ追加する。
 `ScrollChanged` で `FScrollBar.Position` を表示位置に反映し、内容を再描画する。
-描画位置は通常 `内容のY座標 - Position` とする。実装例は [テストフォーム](Tests/VerticalScrollBarTestForm.pas) を参照。
+描画位置は通常 `内容のY座標 - Position` とする。実装例は [テストフォーム](VerticalScrollBarTestForm.pas) を参照。
 
 | 設定 | 意味 |
 | --- | --- |
@@ -48,18 +48,18 @@ Maximumが0ではつまみを描かない。必要なら利用側でVisibleも�
 
 ## 最小テストプロジェクト
 
-保管庫ルートの [VerticalScrollBarTest.dproj](../../../VerticalScrollBarTest.dproj) を開く。
-DPR・DPROJ・RESはルートに置き、フォームはこの部品の `Tests` に置いている。
+このフォルダーの [VerticalScrollBarTest.dproj](VerticalScrollBarTest.dproj) を開く。
+DPR・DPROJ・RESとテストフォームはライブラリ本体ユニットと同じフォルダーに置く。
 番号付き行の表示は使用例であり、汎用リスト部品として登録したものではない。
 
-RAD Studioの環境を読み込んだコマンドプロンプトで、保管庫ルートから実行する。
+RAD Studioの環境を読み込んだコマンドプロンプトで、このライブラリのフォルダーから実行する。
 
 ```bat
 msbuild VerticalScrollBarTest.dproj /t:Build /p:Config=Debug /p:Platform=Win64 /v:minimal
 msbuild VerticalScrollBarTest.dproj /t:Build /p:Config=Release /p:Platform=Win64 /v:minimal
 ```
 
-出力: `Win64/VerticalScrollBarTest/<構成>/VerticalScrollBarTest.exe`
+出力: `Win64/<構成>/VerticalScrollBarTest.exe`
 
 手動確認:
 

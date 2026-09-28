@@ -1,4 +1,4 @@
-# AviUtl2 背景キャンバスキット
+﻿# AviUtl2 背景キャンバスキット
 
 - ID: `aviutl2-canvas`
 - 版: `1.0.0`（2026-09-28）
@@ -36,7 +36,7 @@
 | 保管庫ルートの `SYNC_CanvasTest_Filter.dpr/.dproj` | MapRakuのプラグインプロジェクトをコピーし、依存・名称・出力設定を整理 |
 | `Tests/CanvasTests.dpr` | GPU取得・設定復元などの自動テストと単独UI確認 |
 
-プラグイン一式を利用する場合は、保管庫ルートの `SYNC_CanvasTest_Filter.dpr/.dproj` と `Lib/Kits/AviUtl2Canvas/Source`、`Lib/Kits/AviUtl2Canvas/Tools/build.ps1` を相対位置を維持してコピーする。
+プラグイン一式を利用する場合は、保管庫ルートの `SYNC_CanvasTest_Filter.dpr/.dproj` と `Source/Lib/Kits/AviUtl2Canvas/Source`、`Source/Lib/Kits/AviUtl2Canvas/Tools/build.ps1` を相対位置を維持してコピーする。
 再検証する場合は `Tests/CanvasTests.dpr` と `Tools/test.ps1` もコピーする。
 `Win64` やIDEの `.local` はコピーしない。
 利用側ではプロジェクト名・GUID・フィルター表示名・データ項目名・配置先を自分のアプリ用に変更する。
@@ -62,7 +62,7 @@ IDEビルドはローカルの `.auf2` 生成までで、ホスト配置は上�
 生成DLLのエクスポート・初期化・登録・コールバック・終了も確認する場合:
 
 ```powershell
-.\Tests\Win64\Tests\CanvasTests.exe --dll ..\..\..\Win64\Plugin\Release\SYNC_CanvasTest_Filter.auf2
+.\Tests\Win64\Tests\CanvasTests.exe --dll ..\..\..\..\Win64\Plugin\Release\SYNC_CanvasTest_Filter.auf2
 ```
 
 ## ホスト境界とバッファの条件

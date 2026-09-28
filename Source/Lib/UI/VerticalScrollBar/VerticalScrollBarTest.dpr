@@ -2,8 +2,8 @@
 
 uses
   Vcl.Forms, Vcl.Themes, Vcl.Styles,
-  VerticalScrollBarControl in 'Lib\UI\VerticalScrollBar\VerticalScrollBarControl.pas',
-  VerticalScrollBarTestForm in 'Lib\UI\VerticalScrollBar\Tests\VerticalScrollBarTestForm.pas';
+  VerticalScrollBarControl in 'VerticalScrollBarControl.pas',
+  VerticalScrollBarTestForm in 'VerticalScrollBarTestForm.pas';
 
 {$R *.res}
 
